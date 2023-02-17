@@ -2,7 +2,7 @@
 
 /**
 * main - A program prints the size of various types on the computer
-* Return: Always 0.
+* Return 0
 */
 
 
