@@ -13,10 +13,9 @@ char alphabet;
 alphabet = 'a';
 
 
-printf("Lowercase alphabets:\n");
 while (alphabet <= 'z')
 {
-printf("%c", alphabet);
+putchar(alphabet);
 alphabet++;
 }
 
