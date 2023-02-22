@@ -1,0 +1,23 @@
+/**
+ * jack_bauer -  prints every minute of the day of Jack Bauer
+ *
+ * Return: Absolute 0
+ */
+
+
+#include <stdio.h>
+void jack_bauer(void)
+{
+int minutes = 0, heures = 0;
+
+while (heures != 24)
+{
+printf("%02d:%02d\n", heures, minutes);
+minutes = minutes + 1;
+if (minutes == 60)
+{
+minutes = 0;
+heures = heures + 1;
+}
+}
+}
