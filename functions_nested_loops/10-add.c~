@@ -1,0 +1,13 @@
+/**
+* add - function who add two numbers
+* @val2: val 2
+* @val1: val 1
+* Return: val1 + val2
+*/
+
+#include "main.h"
+
+int add(int val1, int val2)
+{
+return val1 + val2;
+}
