@@ -1,6 +1,7 @@
 CC=gcc
 CFLAGS=-W -Wall -ansi -pedantic
 SRC= school.c main.c
+NAME=school
 OBJ= $(SRC:.c=.o)
 all: $(OBJ)
-	$(CC) $(CFLAGS) -o school $(SRC) m.h
+	$(CC) $(CFLAGS) -o $(NAME) $(SRC) m.h
