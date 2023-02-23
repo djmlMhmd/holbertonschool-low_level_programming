@@ -17,7 +17,7 @@ else
 int i, nb_espace;
 for (i = 1; i <= n; i++)
 {
-for (nb_espace = 1; nb_espace <= i; nb_espace++)
+for (nb_espace = 0; nb_espace < i - 1; nb_espace++)
 {
 _putchar(' ');
 }
