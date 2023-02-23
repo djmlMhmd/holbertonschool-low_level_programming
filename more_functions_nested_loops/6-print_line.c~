@@ -1,0 +1,25 @@
+/**
+* print_line - print line.
+* @n: nbr line
+*
+* Return: 0 (Success)
+*/
+
+#include "main.h"
+
+void print_lines(int n)
+{
+if (n <= 0)
+{
+_putchar('\n');
+}
+else
+{
+int i;
+for (i = 1; i <= n; i++)
+{
+_putchar('_');
+}
+_putchar('\n');
+}
+}
