@@ -12,27 +12,34 @@ int i;
 
 for (i = 1; i <= 100; i++)
 {
-if (!(i % 3) && !(i % 5))
+if (!(i % 15))
 {
-printf("%9s", "FizzBuzz");
+printf("%s ", "FizzBuzz");
 }
 else if (!(i % 3))
 {
-printf("%5s ", "Fizz");
+printf("%s ", "Fizz");
 }
 else if (!(i % 5))
 {
-printf("%5s", "Buzz");
+if (i != 100)
+{
+printf("%s ", "Buzz");
 }
 else
 {
-if ( i <= 9)
-{
-printf("%-2d", i);
+printf("%s", "Buzz");
+}
 }
 else
 {
-printf("%-3d", i);
+if (i <= 9)
+{
+printf("%d ", i);
+}
+else
+{
+printf("%d ", i);
 }
 }
 }
