@@ -18,15 +18,22 @@ printf("%9s", "FizzBuzz");
 }
 else if (!(i % 3))
 {
-printf("%s ", "Fizz");
+printf("%5s ", "Fizz");
 }
 else if (!(i % 5))
 {
-printf("%s ", "Buzz");
+printf("%5s", "Buzz");
 }
 else
 {
-printf("%d ", i);
+if ( i <= 9)
+{
+printf("%-2d", i);
+}
+else
+{
+printf("%-3d", i);
+}
 }
 }
 printf("%s", "\n");
