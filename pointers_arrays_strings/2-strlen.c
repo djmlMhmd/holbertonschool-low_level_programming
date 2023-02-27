@@ -1,6 +1,6 @@
 /**
 * _strlen - function that swaps the values of two integers.
-* @s: string to check length 
+* @s: string to check length
 * Return: lengh of string as int
 */
 
