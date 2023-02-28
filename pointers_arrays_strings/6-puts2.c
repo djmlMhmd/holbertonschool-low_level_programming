@@ -1,0 +1,19 @@
+/**
+ * puts2 - Entry point
+ * @str : value int points
+ *
+ */
+#include <stdio.h>
+#include "main.h"
+#include <string.h>
+
+void puts2(char *str)
+{
+int len = strlen(str);
+int i;
+for (i = 0; i < len; i += 2)
+{
+printf("%c", str[i]);
+}
+printf("\n");
+}
