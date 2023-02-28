@@ -1,0 +1,24 @@
+/**
+ * rev_string - Entry point
+ * @s : value int points
+ * Return: Always 0 (Success)
+ */
+
+#include "main.h"
+#include <string.h>
+
+void rev_string(char *s)
+{
+int len = strlen(s);
+char *start = s;
+char *end = s + len - 1;
+
+while (start < end)
+{
+char tmp = *start;
+*start = *end;
+*end = tmp;
+start++;
+end--;
+}
+}
