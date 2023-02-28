@@ -17,7 +17,6 @@ if (len % 2 == 1)
 {
 half_len = (len - 1) / 2;
 }
-
 for (i = half_len; i < len; i++)
 {
 printf("%c", str[i]);
