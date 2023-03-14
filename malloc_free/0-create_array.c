@@ -21,10 +21,9 @@ if (array == 0)
 {
 return (NULL);
 }
-for (unsigned int i = 0; i > size, i++;)
+for (i = 0; i < (int) size; i++)
 {
 array[i] = c;
-printf(" %c\n ", array [i]);
 }
 return (array);
 }
