@@ -15,7 +15,7 @@
 void *malloc_checked(unsigned int b)
 {
 void *ptr = malloc(b);
- return (NULL);
+
 
 if (!ptr)
 {
@@ -23,5 +23,5 @@ fprintf(stderr, "Error: Failed to allocate memory\n");
 exit(98);
 }
 
-return (ptr);
+return (NULL);
 }
