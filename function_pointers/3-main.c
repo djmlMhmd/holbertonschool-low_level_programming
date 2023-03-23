@@ -1,6 +1,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include "3-calc.h"
+#include <string.h>
 
 /**
  * main - performs simple operations on two integers
@@ -14,6 +15,7 @@ int main(int argc, char *argv[])
 	int a, b;
 	int (*op_func)(int, int);
 
+	
 	if (argc != 4)
 	{
 		printf("Error: Wrong number of arguments\n");
@@ -24,15 +26,16 @@ int main(int argc, char *argv[])
 	b = atoi(argv[3]);
 	op_func = get_op_func(argv[2]);
 
+
 	if (op_func == NULL)
 	{
 		printf("Error: Operator not recognized\n");
 		exit(99);
 	}
 
-if ((op_func == op_div || op_func == op_mod) && b == 0)
+if ((strcmp(argv[2], "/") == 0 || strcmp(argv[2], "%") == 0) && b == 0)
 {
-printf("Error\n");
+printf("Error: Cannot divide by zero\n");
 exit(100);
 }
 	printf("%d\n", op_func(a, b));
