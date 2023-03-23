@@ -17,7 +17,7 @@ int main(int argc, char *argv[])
 
 	if (argc != 4)
 	{
-		printf("Error: Wrong number of arguments\n");
+		printf("Error\n");
 		exit(98);
 	}
 
@@ -28,13 +28,13 @@ int main(int argc, char *argv[])
 
 	if (op_func == NULL)
 	{
-		printf("Error: Operator not recognized\n");
+		printf("Error\n");
 		exit(99);
 	}
 
 if ((op_func == op_div || op_func == op_mod) && b == 0)
 {
-printf("Error: Cannot divide by zero\n");
+printf("Error\n");
 exit(100);
 }
 	printf("%d\n", op_func(a, b));
