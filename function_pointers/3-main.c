@@ -13,7 +13,7 @@
 int main(int argc, char *argv[])
 {
 	int a, b;
-	int (*op_func)(int, int);
+	int (*op_func)(int a, int b);
 
 	
 	if (argc != 4)
@@ -33,7 +33,7 @@ int main(int argc, char *argv[])
 		exit(99);
 	}
 
-if ((strcmp(argv[2], "/") == 0 || strcmp(argv[2], "%") == 0) && b == 0)
+if ((op_func == op_div || op_func == op_mod) && b == 0)
 {
 printf("Error: Cannot divide by zero\n");
 exit(100);
