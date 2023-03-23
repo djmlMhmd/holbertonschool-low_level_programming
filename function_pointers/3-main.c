@@ -25,10 +25,10 @@ int main(int argc, char *argv[])
 
 	op_func = get_op_func(argv[2]);
 
-	if (!op_func)
+	if (op_func == NULL)
 	{
 		printf("Error: Operator not recognized\n");
-		exit(99);
+		exit(-1);
 	}
 
 	printf("%d\n", op_func(a, b));
