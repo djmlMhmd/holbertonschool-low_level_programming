@@ -27,7 +27,7 @@ size_t i = 0;
 
 while (ops[i].op != NULL)
 {
-if (strcmp(ops[i].op, s) == 0)
+if (strcmp(ops[i].op, s) == *s && *(s + 1) == '\0')
 return (ops[i].f);
 i++;
 }
