@@ -23,7 +23,7 @@ op_t ops[] = {
 {NULL, NULL}
 };
 
-int i = 0;
+size_t i = 0;
 
 while (ops[i].op != NULL)
 {

@@ -33,7 +33,7 @@ int main(int argc, char *argv[])
 if ((op_func == op_div || op_func == op_mod) && b == 0)
 {
 printf("Error\n");
-exit (100);
+exit(100);
 }
 	printf("%d\n", op_func(a, b));
 
