@@ -12,7 +12,7 @@
  */
 int main(int argc, char *argv[])
 {
-	int a, b;
+int a, b, result;
 	int (*op_func)(int, int);
 
 	if (argc != 4)
@@ -37,7 +37,8 @@ if ((op_func == op_div || op_func == op_mod) && b == 0)
 printf("Error\n");
 exit(100);
 }
-	printf("%d\n", op_func(a, b));
+result = op_func(a, b);
+printf("%d\n", result);
 
 	return (0);
 }
