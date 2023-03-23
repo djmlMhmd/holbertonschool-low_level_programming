@@ -1,7 +1,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include "3-calc.h"
-#include <string.h>
+
 
 /**
  * main - performs simple operations on two integers
@@ -13,9 +13,8 @@
 int main(int argc, char *argv[])
 {
 	int a, b;
-	int (*op_func)(int, int );
+	int (*op_func)(int, int);
 
-	
 	if (argc != 4)
 	{
 		printf("Error: Wrong number of arguments\n");
