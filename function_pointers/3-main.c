@@ -13,6 +13,7 @@
 int main(int argc, char *argv[])
 {
 int a, b, result;
+
 	int (*op_func)(int, int);
 
 	if (argc != 4)
@@ -26,16 +27,16 @@ int a, b, result;
 	op_func = get_op_func(argv[2]);
 
 
-	if (op_func == NULL)
+	if (!op_func)
 	{
 		printf("Error\n");
 		exit(99);
 	}
 
-if ((op_func == op_div || op_func == op_mod) && b == 0)
-{
-printf("Error\n");
-exit(100);
+	if ((op_func == op_div || op_func == op_mod) && b == 0)
+	{
+	  printf("Error\n");
+	  exit(100);
 }
 result = op_func(a, b);
 printf("%d\n", result);
