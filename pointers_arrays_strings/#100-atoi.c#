@@ -1,0 +1,42 @@
+/**
+ * _atoi - Convertit une chaîne de caractères en un entier.
+ * @s: La chaîne à convertir.
+ *
+ * Return: La valeur entière de la chaîne.
+ */
+int _atoi(char *s)
+{
+    int signe = 1, num = 0, chiffre;
+    int i = 0;
+
+    if (s[i] == '-')
+    {
+        signe = -1;
+        i++;
+    }
+
+    while (s[i] != '\0')
+    {
+        if (s[i] >= '0' && s[i] <= '9')
+        {
+            chiffre = s[i] - '0';
+
+            if (num < INT_MIN / 10 || (num == INT_MIN / 10 && chiffre > 8))
+            {
+                /* Dépassement de la capacité de stockage */
+                return INT_MIN;
+            }
+
+            num = num * 10 - chiffre;
+}
+else if (num != 0 && s[i] != ' ')
+{
+
+return (num * signe);
+}
+
+i++;
+}
+
+return (num * signe);
+}

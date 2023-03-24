@@ -1,19 +1,23 @@
 #include "main.h"
-#include <stdio.h>
+#include<stdio.h>
 
 /**
- * _islower - checks for lowcase charac
- * @c : the charac to be check
- * Return: 1 for lowcase chara or 0 for other
+ * main - Entry point
+ *
+ * Return: Always 0 (Success)
  */
 
-int _islower(int c)
+int main(void)
 {
-if (c >= 'a'  && c <= 'z')
 
-return (1);
-
-else
-
+putchar('_');
+putchar('p');
+putchar('u');
+putchar('t');
+putchar('c');
+putchar('h');
+putchar('a');
+putchar('r');
+putchar('\n');
 return (0);
 }

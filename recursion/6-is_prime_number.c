@@ -35,29 +35,3 @@ int is_prime(int n, int i)
 		return (1);
 	return (is_prime(n, i + 1));
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
